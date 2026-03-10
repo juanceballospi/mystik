@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.messiri {
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.proza-libre {
+  font-family: "Proza Libre", sans-serif;
+}
+
+/* .hero {
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 0px rgba(156, 156, 156, 0.6509803921568628);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: -350px;
+} */
+
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  padding: 277px 30px 340px 30px;
+}

@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔮 Mystik
 
-## Getting Started
+**Mystik** es una aplicación web de esoterismo desarrollada con [Next.js](https://nextjs.org). Permite a los usuarios explorar el universo esotérico a través de herramientas como el horóscopo diario, el horóscopo personalizado y la carta natal, entre otras funcionalidades.
 
-First, run the development server:
+> Proyecto transversal entre las asignaturas **Diseño de Algoritmos** y **Programación Web**  
+> Ciclo **2026-1T** · Carrera: **Tecnología en Desarrollo de Software y Aplicativos Móviles**  
+> [Politécnico Internacional](https://www.politecnicointernacional.edu.co)
+
+---
+
+## ✨ Funcionalidades
+
+- 🌟 **Horóscopo diario** — Consulta tu signo zodiacal y recibe tu predicción del día.
+- 🪐 **Horóscopo personalizado** — Predicciones adaptadas a tu perfil astrológico.
+- 🗺️ **Carta natal** — Genera e interpreta tu carta astral a partir de tu fecha, hora y lugar de nacimiento.
+- _(Más funcionalidades próximamente…)_
+
+---
+
+## 🛠️ Stack tecnológico
+
+| Tecnología                                   | Versión |
+| -------------------------------------------- | ------- |
+| [Next.js](https://nextjs.org)                | 16      |
+| [React](https://react.dev)                   | 19      |
+| [TypeScript](https://www.typescriptlang.org) | 5       |
+| [Tailwind CSS](https://tailwindcss.com)      | 4       |
+| [pnpm](https://pnpm.io)                      | —       |
+
+**Tipografías:** El Messiri · Proza Libre · Geist Mono
+
+---
+
+## 🚀 Inicio rápido
+
+Instala las dependencias y arranca el servidor de desarrollo:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El punto de entrada principal de la aplicación es `app/page.tsx`. Los cambios se reflejan automáticamente en el navegador.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Estructura del proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```
+mystik/
+├── app/
+│   ├── layout.tsx        # Layout raíz y configuración de fuentes
+│   ├── page.tsx          # Página principal
+│   └── globals.css       # Estilos globales
+├── components/
+│   └── header.tsx        # Componente de encabezado
+├── public/               # Archivos estáticos
+└── other/                # Recursos adicionales (prototipo HTML/CSS)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Scripts disponibles
 
-## Deploy on Vercel
+| Comando      | Descripción                       |
+| ------------ | --------------------------------- |
+| `pnpm dev`   | Inicia el servidor de desarrollo  |
+| `pnpm build` | Genera el build de producción     |
+| `pnpm start` | Ejecuta el servidor de producción |
+| `pnpm lint`  | Analiza el código con ESLint      |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📚 Recursos útiles
+
+- [Documentación de Next.js](https://nextjs.org/docs)
+- [Documentación de Tailwind CSS v4](https://tailwindcss.com/docs)
+- [Repositorio de Next.js en GitHub](https://github.com/vercel/next.js)

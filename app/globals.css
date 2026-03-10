@@ -1,26 +1,49 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-koromiko-50: #fff9ed;
+	--color-koromiko-100: #fff1d4;
+	--color-koromiko-200: #ffdfa9;
+	--color-koromiko-300: #ffc367;
+	--color-koromiko-400: #fea539;
+	--color-koromiko-500: #fc8813;
+	--color-koromiko-600: #ed6d09;
+	--color-koromiko-700: #c55209;
+	--color-koromiko-800: #9c4010;
+	--color-koromiko-900: #7e3610;
+	--color-koromiko-950: #441a06;
+	--color-star-dust-50: #fafafa;
+	--color-star-dust-100: #f5f5f5;
+	--color-star-dust-200: #e6e6e6;
+	--color-star-dust-300: #d3d3d3;
+	--color-star-dust-400: #9d9d9d;
+	--color-star-dust-500: #727272;
+	--color-star-dust-600: #535353;
+	--color-star-dust-700: #404040;
+	--color-star-dust-800: #272727;
+	--color-star-dust-900: #1a1a1a;
+	--color-star-dust-950: #0b0b0b;
+	--font-sans: var(--font-proza-libre);
+	--font-title: var(--font-el-messiri);
+	--font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
 }
