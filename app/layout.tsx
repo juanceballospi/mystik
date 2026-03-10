@@ -5,6 +5,7 @@ import {
 	Proza_Libre,
 } from 'next/font/google';
 import './globals.css';
+import { Header } from '@/components/header';
 
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
@@ -35,8 +36,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${geistMono.variable} ${elMessiri.variable} ${prozaLibre.variable} antialiased bg-star-dust-950 text-star-dust-400`}
+				className={`${geistMono.variable} ${elMessiri.variable} ${prozaLibre.variable} antialiased font-sans bg-star-dust-950 text-star-dust-400`}
 			>
+				<Header />
 				{children}
 			</body>
 		</html>
