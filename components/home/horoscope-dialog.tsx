@@ -1,7 +1,7 @@
 "use client";
 
 import { getDailyHoroscope } from "@/lib/api";
-import { HoroscopeData, ZodiacSign } from "@/lib/types";
+import { HoroscopeData, ZodiacSign, ScoreFactor } from "@/lib/types";
 import {
   CircleIcon,
   MoonIcon,
@@ -18,6 +18,10 @@ import {
 } from "../ui/dialog";
 import { ZodiacSignCard } from "./zodiac-sign-card";
 import Image from "next/image";
+
+function Factor(factor: ScoreFactor ) {
+  return (<></>)
+}
 
 function Metric({ label, value }: { label: string; value: number }) {
   return (
@@ -241,8 +245,8 @@ export function HoroscopeDialog({ sign }: HoroscopeDialogProps) {
               </span>
             </DialogHeader>
             <div className="px-6 pb-8 overflow-y-auto max-h-[65vh] flex gap-6">
-              <div className="flex-2 py-6">
-                <div className="w-full flex gap-2 items-center mb-4">
+              <div className="flex-2 pb-6">
+                <div className="w-full flex gap-3 items-center mb-4">
                   <figure className="w-10 aspect-square overflow-hidden">
                     <Image
                       src={sign.image}
@@ -255,7 +259,7 @@ export function HoroscopeDialog({ sign }: HoroscopeDialogProps) {
                   <h2 className="text-4xl font-extralight text-koromiko-300 tracking-tighter capitalize font-title">
                     {sign.name}
                   </h2>
-                  <span className="text-[10px] uppercase font-bold tracking-[0.4em] ml-auto text-koromiko-500/80">
+                  <span className="text-[10px] uppercase font-bold tracking-[0.4em] ml-auto text-koromiko-500/80 border border-star-dust-700 px-4 py-1">
                     {data.content.theme}
                   </span>
                 </div>
@@ -272,7 +276,7 @@ export function HoroscopeDialog({ sign }: HoroscopeDialogProps) {
               </div>
               {/* Divider */}
               <div className="w-px bg-star-dust-800"></div>
-              <div className="flex-1 py-6 flex flex-col items-center">
+              <div className="flex-1 pb-6 flex flex-col items-center">
                 <div className="relative w-36 h-36 flex items-center justify-center">
                   {/* SVG del Progreso Circular */}
                   <svg
@@ -320,10 +324,16 @@ export function HoroscopeDialog({ sign }: HoroscopeDialogProps) {
                     </span>
                   </div>
                 </div>
+                <section className="w-full flex flex-col gap-4 pt-6">
+                  <Metric label="Love" value={data.scores.love} />
+                  <Metric label="Career" value={data.scores.career} />
+                  <Metric label="Money" value={data.scores.money} />
+                  <Metric label="Health" value={data.scores.health} />
+                </section>
               </div>
             </div>
           </>
-        )}
+        )}    
 
         {/* Body
         <div className="overflow-y-auto max-h-[65vh] px-6 py-6">

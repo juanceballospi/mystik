@@ -1,0 +1,218 @@
+{
+    "meta": {
+        "request_id": "req_07e04e28",
+        "generated_at": "2026-03-11T15:16:49.303015",
+        "settings": {
+            "date_resolved": "2026-03-11",
+            "version": "v2"
+        },
+        "engine": {
+            "name": "DailyHoroscopeEngine",
+            "version": "2.0.0"
+        }
+    },
+    "data": {
+        "sign": "virgo",
+        "date": "2026-03-11",
+        "scores": {
+            "overall": 39,
+            "love": 35,
+            "career": 35,
+            "money": 50,
+            "health": 35
+        },
+        "score_factors": [
+            {
+                "dimension": "overall",
+                "type": "aggregate",
+                "reason": {
+                    "main": "Overall is the weighted average of Love, Career, Money, and Health.",
+                    "secondary": null
+                },
+                "drivers": [
+                    {
+                        "type": "score",
+                        "key": "love",
+                        "value": 35
+                    },
+                    {
+                        "type": "score",
+                        "key": "career",
+                        "value": 35
+                    },
+                    {
+                        "type": "score",
+                        "key": "money",
+                        "value": 50
+                    },
+                    {
+                        "type": "score",
+                        "key": "health",
+                        "value": 35
+                    }
+                ]
+            },
+            {
+                "dimension": "love",
+                "type": "dimension",
+                "drivers": [
+                    {
+                        "type": "sky_aspect",
+                        "key": "sun_square_moon",
+                        "label": "Sun Square Moon",
+                        "weight": 0.53,
+                        "intensity": "moderate",
+                        "orb_deg": 1.07
+                    },
+                    {
+                        "type": "sky_aspect",
+                        "key": "venus_conjunction_saturn",
+                        "label": "Venus Conjunction Saturn",
+                        "weight": 0.47,
+                        "intensity": "subtle",
+                        "orb_deg": 3.28
+                    }
+                ],
+                "reason": {
+                    "main": "Sun Square Moon stirs naming unmet needs without escalating signaling a need for rest.",
+                    "secondary": "Venus Conjunction Saturn fuses with intense bonding and transformative intimacy —if you stay direct and calm."
+                }
+            },
+            {
+                "dimension": "career",
+                "type": "dimension",
+                "drivers": [
+                    {
+                        "type": "sky_aspect",
+                        "key": "sun_square_moon",
+                        "label": "Sun Square Moon",
+                        "weight": 0.56,
+                        "intensity": "moderate",
+                        "orb_deg": 1.07
+                    },
+                    {
+                        "type": "sky_aspect",
+                        "key": "venus_conjunction_saturn",
+                        "label": "Venus Conjunction Saturn",
+                        "weight": 0.44,
+                        "intensity": "subtle",
+                        "orb_deg": 3.28
+                    }
+                ],
+                "reason": {
+                    "main": "Sun Square Moon stirs pressure to refine goals and timelines requiring a cautious shift in strategy.",
+                    "secondary": "Venus Conjunction Saturn amplifies intense focus on strategy and long-term control yet demands patience with the process."
+                }
+            },
+            {
+                "dimension": "money",
+                "type": "dimension",
+                "drivers": [
+                    {
+                        "type": "sky_aspect",
+                        "key": "venus_conjunction_saturn",
+                        "label": "Venus Conjunction Saturn",
+                        "weight": 0.5,
+                        "intensity": "subtle",
+                        "orb_deg": 3.28
+                    },
+                    {
+                        "type": "sky_aspect",
+                        "key": "mercury_trine_jupiter",
+                        "label": "Mercury Trine Jupiter",
+                        "weight": 0.5,
+                        "intensity": "moderate",
+                        "orb_deg": 2.18
+                    }
+                ],
+                "reason": {
+                    "main": "Venus Conjunction Saturn concentrates deep recalibration of what you truly value, though external friction may slow results.",
+                    "secondary": "Mercury Trine Jupiter favors securing good deals and effective budgeting."
+                }
+            },
+            {
+                "dimension": "health",
+                "type": "dimension",
+                "drivers": [
+                    {
+                        "type": "sky_aspect",
+                        "key": "sun_square_moon",
+                        "label": "Sun Square Moon",
+                        "weight": 1,
+                        "intensity": "moderate",
+                        "orb_deg": 1.07
+                    }
+                ],
+                "reason": {
+                    "main": "Sun Square Moon stirs managing irritability and reactive stress signaling a need for rest.",
+                    "secondary": null
+                }
+            }
+        ],
+        "lucky": {
+            "color": {
+                "key": "red",
+                "label": "Red"
+            },
+            "number": 49,
+            "time_window": {
+                "display": "11am - 4pm",
+                "start": "11:00",
+                "end": "16:00",
+                "tz": "UTC"
+            }
+        },
+        "content": {
+            "text": "When this influence is active, emotions run ahead of willpower, making it harder to feel steady in your own direction. Small slights can land as personal, and you may swing between needing reassurance and pushing forward alone. It often shows up in family dynamics, visibility at work, or leadership moments. Pause, name the feeling, then choose one clear priority. With the Moon in Sagittarius (Last Quarter), the cosmic mood favors adventurous ideas. For you, this brings a focus on analysis. The energy today supports strategic planning. Trust your instincts as you navigate the day's potential.",
+            "theme": "Analysis",
+            "keywords": [
+                "Service",
+                "Analysis",
+                "Detail",
+                "Momentum",
+                "Focus"
+            ],
+            "supporting_insights": [
+                "If you feel reactive, reduce input: fewer conversations, simpler tasks, and a short reset before responding.",
+                "Seek warmth without approval-seeking: a trusted person, nourishing food, or a brief walk to regain center."
+            ]
+        },
+        "astro": {
+            "moon_sign": {
+                "key": "sagittarius",
+                "label": "Sagittarius"
+            },
+            "moon_phase": {
+                "key": "last_quarter",
+                "label": "Last Quarter"
+            },
+            "highlights": [
+                {
+                    "type": "moon_sign",
+                    "key": "sagittarius",
+                    "label": "Moon in Sagittarius"
+                },
+                {
+                    "type": "moon_phase",
+                    "key": "last_quarter",
+                    "label": "Last Quarter"
+                },
+                {
+                    "type": "sky_aspect",
+                    "key": "venus_conjunction_saturn",
+                    "label": "Venus Conjunction Saturn"
+                },
+                {
+                    "type": "sky_aspect",
+                    "key": "mercury_trine_jupiter",
+                    "label": "Mercury Trine Jupiter"
+                },
+                {
+                    "type": "sky_aspect",
+                    "key": "sun_square_moon",
+                    "label": "Sun Square Moon"
+                }
+            ]
+        }
+    }
+}

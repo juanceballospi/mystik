@@ -1,5 +1,6 @@
 import axios, { AxiosError } from 'axios';
 import { HoroscopeApiResponse } from './types';
+import { getMockDailyHoroscope } from './mock-api';
 
 // Axios instance configured for the astrology API
 const api = axios.create({
@@ -10,16 +11,27 @@ const api = axios.create({
   },
 });
 
+const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK === 'true';
+
 /**
  * Fetches the daily horoscope for a given zodiac sign.
+ * @param version - API version (e.g. "v2")
  * @param sign - Sign name (e.g. "aries", "taurus")
  * @param date - Optional date in YYYY-MM-DD format (defaults to today)
+ *
+ * When NEXT_PUBLIC_USE_MOCK=true the request is intercepted and the local
+ * response.json is returned instead, preserving API tokens in development.
  */
 export const getDailyHoroscope = async (
   version: string = "v2",
   sign: string,
   date?: string
 ): Promise<HoroscopeApiResponse> => {
+  if (USE_MOCK) {
+    console.log('[mock-api] Returning mock horoscope data (NEXT_PUBLIC_USE_MOCK=true)');
+    return getMockDailyHoroscope(version, sign, date);
+  }
+
   try {
     const params: Record<string, string> = { sign };
     if (date) params.date = date;
