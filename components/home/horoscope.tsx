@@ -2,7 +2,8 @@
 
 import { zodiacSigns } from "@/lib/zodiac-signs";
 import { Subtitle } from "../ui/subtitle";
-import { ZodiacSign } from "./zodiac-sign";
+import { ZodiacSignCard } from "./zodiac-sign-card";
+import { HoroscopeDialog } from "./horoscope-dialog";
 
 export function Horoscope() {
   return (
@@ -15,7 +16,7 @@ export function Horoscope() {
         <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {zodiacSigns.map((sign) => (
             <div key={sign.id} className="w-full">
-              <ZodiacSign sign={sign} />
+              <HoroscopeDialog sign={sign} />
             </div>
           ))}
         </div>

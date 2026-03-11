@@ -1,16 +1,20 @@
-import { ZodiacSign as ZodiacSignType } from "@/lib/zodiac-signs";
+import { ZodiacSign as ZodiacSignType } from "@/lib/types";
 import Image from "next/image";
 
-interface ZodiacSignProps {
+interface ZodiacSignCardProps {
   sign: ZodiacSignType;
+  onClick: () => Promise<void>;
 }
 
-export function ZodiacSign({ sign }: ZodiacSignProps) {
+export function ZodiacSignCard({ sign, onClick }: ZodiacSignCardProps) {
   const { start, end } = sign.date;
   const dateLabel = `${start.month} ${start.day} - ${end.month} ${end.day}`;
 
   return (
-    <div className="w-full h-64 flex flex-col items-center justify-between p-6 border-2 border-star-dust-700 hover:border-koromiko-300 hover:-translate-y-1 hover:scale-102 transition-all duration-400 ease-in-out cursor-pointer">
+    <div
+      onClick={onClick}
+      className="w-full h-64 flex flex-col items-center justify-between p-6 border-2 border-star-dust-700 hover:border-koromiko-300 hover:-translate-y-1 hover:scale-102 transition-all duration-400 ease-in-out cursor-pointer"
+    >
       <figure className="w-full aspect-square overflow-hidden">
         <Image
           src={sign.image}

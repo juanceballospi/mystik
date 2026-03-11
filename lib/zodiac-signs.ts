@@ -1,24 +1,8 @@
-export interface ZodiacDateBound {
-  month: string;
-  day: number;
-}
-
-export interface ZodiacDate {
-  start: ZodiacDateBound;
-  end: ZodiacDateBound;
-}
-
-export interface ZodiacSign {
-  id: number;
-  name: string;
-  image: string;
-  // date: "Mar 21 - Apr 19",
-  date: ZodiacDate;
-}
+import { ZodiacSign } from "./types";
 
 export const zodiacSigns: ZodiacSign[] = [
   {
-    id: 1,
+    id: 'aries',
     name: "Aries",
     image: "/zodiac-signs/aries.png",
     // date: "Mar 21 - Apr 19",
@@ -34,7 +18,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 2,
+    id: 'taurus',
     name: "Taurus",
     image: "/zodiac-signs/taurus.png",
     // date: "Apr 20 - May 20",
@@ -50,7 +34,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 3,
+    id: 'gemini',
     name: "Gemini",
     image: "/zodiac-signs/gemini.png",
     // date: "May 21 - Jun 20",
@@ -66,7 +50,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 4,
+    id: 'cancer',
     name: "Cancer",
     image: "/zodiac-signs/cancer.png",
     // date: "Jun 21 - Jul 22",
@@ -82,7 +66,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 5,
+    id: 'leo',
     name: "Leo",
     image: "/zodiac-signs/leo.png",
     // date: "Jul 23 - Aug 22",
@@ -98,7 +82,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 6,
+    id: 'virgo',
     name: "Virgo",
     image: "/zodiac-signs/virgo.png",
     // date: "Aug 23 - Sep 22",
@@ -114,7 +98,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 7,
+    id: 'libra',
     name: "Libra",
     image: "/zodiac-signs/libra.png",
     // date: "Sep 23 - Oct 22",
@@ -130,7 +114,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 8,
+    id: 'scorpio',
     name: "Scorpio",
     image: "/zodiac-signs/scorpio.png",
     // date: "Oct 23 - Nov 21",
@@ -146,7 +130,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 9,
+    id: 'sagittarius',
     name: "Sagittarius",
     image: "/zodiac-signs/sagittarius.png",
     // date: "Nov 22 - Dec 21",
@@ -162,7 +146,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 10,
+    id: 'capricorn',
     name: "Capricorn",
     image: "/zodiac-signs/capricorn.png",
     // date: "Dec 22 - Jan 19",
@@ -178,7 +162,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 11,
+    id: 'aquarius',
     name: "Aquarius",
     image: "/zodiac-signs/aquarius.png",
     // date: "Jan 20 - Feb 18",
@@ -194,7 +178,7 @@ export const zodiacSigns: ZodiacSign[] = [
     },
   },
   {
-    id: 12,
+    id: 'pisces',
     name: "Pisces",
     image: "/zodiac-signs/pisces.png",
     // date: "Feb 19 - Mar 20",
